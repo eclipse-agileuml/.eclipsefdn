@@ -4,12 +4,9 @@ orgs.newOrg('modeling.agileuml', 'eclipse-agileuml') {
   settings+: {
     description: "",
     name: "Eclipse AgileUML project",
-    packages_containers_internal: false,
-    packages_containers_public: false,
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
-      default_workflow_permissions: "write",
     },
   },
   _repositories+:: [
@@ -28,17 +25,12 @@ orgs.newOrg('modeling.agileuml', 'eclipse-agileuml') {
       description: "AgileUML tools for MDE using UML",
       has_discussions: true,
       homepage: "https://www.agilemde.co.uk",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "agile",
         "ocl",
         "uml"
       ],
       web_commit_signoff_required: false,
-      workflows+: {
-        default_workflow_permissions: "write",
-      },
     },
   ],
 }
